@@ -1,0 +1,18 @@
+{
+  "name": "fatima-gonzaga-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cinematic teacher portfolio for Fatima Grace C. Gonzaga",
+  "scripts": {
+    "start": "node server.mjs",
+    "build:assets": "node tools/vendor-three.mjs && node tools/cutout.mjs && node tools/build-core.mjs",
+    "build:core": "node tools/build-core.mjs"
+  },
+  "devDependencies": {
+    "@imgly/background-removal-node": "^1.4.5",
+    "esbuild": "^0.28.2",
+    "sharp": "^0.35.5",
+    "three": "^0.187.0"
+  }
+}
