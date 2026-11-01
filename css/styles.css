@@ -568,7 +568,7 @@ body.is-ready .hero-title, body.is-ready .hero-subject, body.is-ready .hero-intr
 
   .hero { height: 620vh; }
   .hero-title { flex-direction: column; align-items: center; gap: 0; top: calc(var(--header-h) + 2vh); line-height: 0.96; font-size: 20vw; }
-  .hero-subject { height: min(74svh, 132vw); }
+  .hero-subject { height: min(68svh, 118vw); }
   .hero-intro { left: 50%; translate: -50% 0; width: calc(100% - 2.5rem); max-width: none; text-align: center; bottom: 1.5rem; }
   .hero-tagline { font-size: 1.05rem; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(16, 4, 12, 0.9); }
   .hero-ctas { justify-content: center; }

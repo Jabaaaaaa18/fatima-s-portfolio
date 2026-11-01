@@ -53,8 +53,11 @@ function fitHeroTitle() {
   const mobile = isMobile.matches;
   const compact = window.matchMedia('(min-width: 821px) and (max-height: 520px)').matches;
   const stacked = mobile || compact;
+  const portrait = window.innerHeight > window.innerWidth;
   const size = mobile
-    ? window.innerWidth * 0.2
+    ? portrait
+      ? Math.min(window.innerWidth * 0.2, window.innerHeight * 0.075)
+      : window.innerWidth * 0.2
     : compact
       ? Math.min(window.innerWidth * 0.06, window.innerHeight * 0.1)
       : window.innerWidth * 0.06;
